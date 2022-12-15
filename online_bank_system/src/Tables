@@ -1,0 +1,29 @@
+
+
+
+
+
+------------------------------------------------------------------
+
+create table Customer
+(
+cname varchar(20),
+cemail varchar(25),
+cpassword varchar(20),
+cmobile varchar(10),
+caddress varchar(20),
+cid int primary key auto_increment
+);
+
+
+-------------------------------------------------------------------------
+
+create table Account
+(
+cAccno bigint primary key auto_increment,
+cbal int,
+cid int,
+foreign key(cid) references Customer(cid) on delete cascade
+);
+
+alter table Account auto_increment=2023001;

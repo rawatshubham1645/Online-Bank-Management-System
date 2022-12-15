@@ -3,41 +3,41 @@ package com.masai.Beam;
 public class Accountant {
 	
 	
-	private String name;
-	private String email;
-	private String password;
+	private String aname;
+	private String aemail;
+	private String apassword;
 	public Accountant(String name, String email, String password) {
 		super();
-		this.name = name;
-		this.email = email;
-		this.password = password;
+		this.aname = name;
+		this.aemail = email;
+		this.apassword = password;
 	}
 	public Accountant() {
 		super();
 	}
 
-	public String getName() {
-		return name;
+	public String getAname() {
+		return aname;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setAname(String name) {
+		this.aname = name;
 	}
-	public String getEmail() {
-		return email;
+	public String getAemail() {
+		return aemail;
 	}
-	public void setEmail(String email) {
-		this.email = email;
+	public void setAemail(String email) {
+		this.aemail = email;
 	}
-	public String getPassword() {
-		return password;
+	public String getApassword() {
+		return apassword;
 	}
-	public void setPassword(String password) {
-		this.password = password;
+	public void setApassword(String password) {
+		this.apassword = password;
 	}
 	
 	@Override
 	public String toString() {
-		return "Accountant [name=" + name + ", email=" + email + ", password=" + password + "]";
+		return "Accountant [name=" + aname + ", email=" + aemail + ", password=" + apassword + "]";
 	}
 	
 }
