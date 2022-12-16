@@ -27,3 +27,15 @@ foreign key(cid) references Customer(cid) on delete cascade
 );
 
 alter table Account auto_increment=2023001;
+
+
+-----------------------------------------------------------------------
+
+create table Transaction
+(
+caccno bigint not null,
+deposit int not null,
+withdraw int not null,
+timestamp TIMESTAMP not null,
+foreign key(caccno) references Account(cAccno) on delete cascade
+);
