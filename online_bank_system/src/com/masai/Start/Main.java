@@ -195,6 +195,30 @@ public class Main {
 							e1.printStackTrace();
 						}
 					}
+					if(x==7) {
+						CustomerDao cd=new CustomerDaoImpl();
+						System.out.println("----------------TRANSACTIONS------------------");
+						System.out.println("Enter Account No. to view Transaction Records");
+						int ac=sc.nextInt();
+						List<Transaction> li=null;
+						try {
+							li= cd.viewTransaction(ac);
+						}catch(CustomerException e) {
+							System.out.println(e.getMessage());
+						}
+						System.out.println("------TRANSACTION HISTORY-------");
+						System.out.println();
+						System.out.println("Account No.: " + li.get(0).getAccountNo());
+						
+						li.forEach(v->{
+							System.out.println("----------------------------------------------------");
+							if(v.getDeposit()!=0)
+								System.out.println("Amount Credit: "+ v.getDeposit());
+							if(v.getWithdraw()!=0)
+								System.out.println("Amount Debit : "+ v.getWithdraw());
+							System.out.println("Date and Time: "+ v.getTransaction_time());
+						});
+					}
 					if(x==8) {
 						System.out.println("Accountant Logged out");
 						y=false;
