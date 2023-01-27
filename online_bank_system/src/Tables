@@ -2,15 +2,15 @@
 
 1. Table to Add an Accountant through hardcoding the name,mail and password in this table
 *****************************
-create table InfoAccountant 
+create table admin 
 (							
 name varchar(20),
 email varchar(25),
 password varchar(20)
 );
 
-
-------------------------------------------------------------------
+2. Table to Add Customer information
+*************************************
 
 create table Customer
 (
@@ -22,8 +22,8 @@ caddress varchar(20),
 cid int primary key auto_increment
 );
 
-
--------------------------------------------------------------------------
+3. Account table will take care of the account no and balance mapped through customer id
+****************************************************************
 
 create table Account
 (
@@ -36,7 +36,8 @@ foreign key(cid) references Customer(cid) on delete cascade
 alter table Account auto_increment=2023001;
 
 
------------------------------------------------------------------------
+4. Transaction table will take care all transactions
+***************************************************************
 
 create table Transaction
 (
