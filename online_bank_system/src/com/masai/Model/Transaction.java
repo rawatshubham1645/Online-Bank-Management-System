@@ -1,4 +1,4 @@
-package com.masai.Beam;
+package com.masai.Model;
 
 import java.sql.Timestamp;
 

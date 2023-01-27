@@ -5,11 +5,11 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import com.masai.Beam.Accountant;
-import com.masai.Beam.Customer;
 import com.masai.Exception.AccountException;
 import com.masai.Exception.AccountantException;
 import com.masai.Exception.CustomerException;
+import com.masai.Model.Accountant;
+import com.masai.Model.Customer;
 
 import utility.Utilclass;
 

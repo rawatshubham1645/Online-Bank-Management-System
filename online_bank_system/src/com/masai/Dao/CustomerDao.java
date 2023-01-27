@@ -2,9 +2,9 @@ package com.masai.Dao;
 
 import java.util.List;
 
-import com.masai.Beam.Customer;
-import com.masai.Beam.Transaction;
 import com.masai.Exception.CustomerException;
+import com.masai.Model.Customer;
+import com.masai.Model.Transaction;
 
 public interface CustomerDao {
 	

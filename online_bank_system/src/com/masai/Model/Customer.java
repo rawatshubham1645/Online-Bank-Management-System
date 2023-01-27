@@ -1,4 +1,4 @@
-package com.masai.Beam;
+package com.masai.Model;
 
 public class Customer {
 	private int caccno;

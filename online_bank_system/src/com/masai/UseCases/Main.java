@@ -1,11 +1,8 @@
-package com.masai.Start;
+package com.masai.UseCases;
 
 import java.util.List;
 import java.util.Scanner;
 
-import com.masai.Beam.Accountant;
-import com.masai.Beam.Customer;
-import com.masai.Beam.Transaction;
 import com.masai.Dao.AccountantDao;
 import com.masai.Dao.AccountantDaoImple;
 import com.masai.Dao.CustomerDao;
@@ -13,6 +10,9 @@ import com.masai.Dao.CustomerDaoImpl;
 import com.masai.Exception.AccountException;
 import com.masai.Exception.AccountantException;
 import com.masai.Exception.CustomerException;
+import com.masai.Model.Accountant;
+import com.masai.Model.Customer;
+import com.masai.Model.Transaction;
 
 public class Main {
 	

@@ -1,6 +1,13 @@
 
 
-
+1. Table to Add an Accountant through hardcoding the name,mail and password in this table
+*****************************
+create table InfoAccountant 
+(							
+name varchar(20),
+email varchar(25),
+password varchar(20)
+);
 
 
 ------------------------------------------------------------------
